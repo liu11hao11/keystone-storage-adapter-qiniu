@@ -4,7 +4,7 @@
   "description": "qiniu storage adapter for keystonejs",
   "main": "index.js",
   "author": "liu11hao11@126.com>",
-  "license": "MIT",  
+  "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
     "keystone-storage-namefunctions": "^1.0.0",
@@ -26,5 +26,13 @@
     "keystone-storage",
     "keystonejs",
     "storage"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liu11hao11/keystone-storage-adapter-qiniu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liu11hao11/keystone-storage-adapter-qiniu/issues"
+  },
+  "homepage": "https://github.com/liu11hao11/keystone-storage-adapter-qiniu#readme"
 }
