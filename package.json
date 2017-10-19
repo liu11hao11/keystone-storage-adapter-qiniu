@@ -1,0 +1,30 @@
+{
+  "name": "keystone-storage-adapter-qiniu",
+  "version": "1.0.0",
+  "description": "qiniu storage adapter for keystonejs",
+  "main": "index.js",
+  "author": "liu11hao11@126.com>",
+  "license": "MIT",  
+  "dependencies": {
+    "debug": "^2.2.0",
+    "keystone-storage-namefunctions": "^1.0.0",
+    "object-assign": "^4.1.0",
+    "qiniu": "^7.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^2.0.0",
+    "eslint": "^3.2.2",
+    "mocha": "^3.0.0"
+  },
+  "scripts": {
+    "test": "eslint . && mocha test.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "qiniu",
+    "keystone",
+    "keystone-storage",
+    "keystonejs",
+    "storage"
+  ]
+}
