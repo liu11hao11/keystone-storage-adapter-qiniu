@@ -1,6 +1,6 @@
 {
   "name": "keystone-storage-adapter-qiniu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "qiniu storage adapter for keystonejs",
   "main": "index.js",
   "author": "liu11hao11@126.com>",

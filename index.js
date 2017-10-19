@@ -11,7 +11,7 @@ var ensureCallback = require("keystone-storage-namefunctions/ensureCallback");
 var qiniu = require("qiniu");
 var nameFunctions = require("keystone-storage-namefunctions");
 var pathlib = require("path");
-var url = require("url");
+const urllib = require("url");
 
 var DEFAULT_OPTIONS = {
 	accessKey: process.env.accessKey,
@@ -119,10 +119,6 @@ QiniuAdapter.prototype.uploadFile = function (file, callback) {
 					file.filename = filename;
 					file.path = self.options.path;
 					file.bucket = self.options.bucket;
-					file.url = url.reslove(						
-						self.options.path,
-						filename
-					);
 					debug("file upload successful");
 					callback(null, file);
 				} else {
@@ -136,7 +132,7 @@ QiniuAdapter.prototype.uploadFile = function (file, callback) {
 };
 
 QiniuAdapter.prototype.getFileURL = function (file) {
-	return url.resolve(this.options.domain, this._resolveFilename(file));
+	return urllib.resolve(this.options.domain, this._resolveFilename(file));
 };
 
 QiniuAdapter.prototype.removeFile = function (file, callback) {
